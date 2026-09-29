@@ -1,6 +1,6 @@
-# Carreras de caracoles
+# Carreras
 
-Aplicación web de simulación de apuestas en carreras de caracoles.
+Aplicación web de simulación de apuestas en carreras
 
 Incluye registro e inicio de sesión local, dashboard con estadísticas simuladas y una integración con una pasarela de pago ficticia llamada SnailPay.
 
