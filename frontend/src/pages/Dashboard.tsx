@@ -192,7 +192,6 @@ function Dashboard() {
                     <div className="chart-heading">
                         <div>
                             <h2>Apuestas del día</h2>
-                            <p>Resultados simulados</p>
                         </div>
                     </div>
 
@@ -240,7 +239,6 @@ function Dashboard() {
                     <div className="chart-heading">
                         <div>
                             <h2>Victorias de caracoles</h2>
-                            <p>Seis carreras simuladas durante el día</p>
                         </div>
                     </div>
 

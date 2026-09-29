@@ -62,7 +62,7 @@ async function crearHash(texto: string): Promise<string> {
 
 function App() {
     const navigate = useNavigate()
-    
+
     const [pestana, setPestana] = useState<'login' | 'registro'>('login')
     const [mensajeRegistro, setMsgRegistro] = useState('')
     const [verPasswordLogin, setVerPasswordLogin] = useState(false)
@@ -80,6 +80,22 @@ function App() {
         const email = String(datos.get('email') ?? '').trim().toLowerCase()
         const password = String(datos.get('password') ?? '')
         const confirmacion = String(datos.get('confirmacion') ?? '')
+
+        const usuarioGuardado = localStorage.getItem('caracoles_usuario')
+
+        if (usuarioGuardado) {
+            const usuarioExistente = JSON.parse(usuarioGuardado)
+
+            if (usuarioExistente.email === email) {
+                setMsgRegistro('Ya existe una cuenta con este correo.')
+            } else {
+                setMsgRegistro(
+                    'Esta demostración permite registrar una sola cuenta local.',
+                )
+            }
+
+            return
+        }
 
 
         if (!nombre || !email || !password || !confirmacion) {
