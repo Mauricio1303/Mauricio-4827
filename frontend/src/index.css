@@ -1,0 +1,40 @@
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  --fondo: #141a22;
+  --superficie: #1d2633;
+  --texto: #f1f5f9;
+  --texto-secundario: #a8b3c4;
+  --acento: #b8cbea;
+  --borde: #344154;
+
+  color: var(--texto);
+  background-color: var(--fondo);
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 0;
+}
+
+button,
+input {
+  font: inherit;
+}

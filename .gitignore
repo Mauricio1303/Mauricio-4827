@@ -1,0 +1,19 @@
+# Dependencias
+**/node_modules/
+
+# Archivos generados
+**/dist/
+**/coverage/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Registros
+*.log
+npm-debug.log*
