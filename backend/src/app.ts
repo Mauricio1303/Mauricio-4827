@@ -18,7 +18,10 @@ const PORT = 3001
 
 app.use(
     cors({
-        origin: 'http://localhost:5173',
+        origin: [
+            'http://localhost:5173',
+            'https://mauricio-4827-1.onrender.com',
+        ],
     }),
 )
 
