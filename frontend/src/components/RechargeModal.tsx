@@ -40,8 +40,11 @@ function RechargeModal({
         const controller = new AbortController()
         const timeout = window.setTimeout(() => controller.abort(), 8_000)
 
+        const API_URL =
+            import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
+
         try {
-            const response = await fetch('http://localhost:3001/api/snailpay/charge', {
+            const response = await fetch(`${API_URL}/api/snailpay/charge`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
